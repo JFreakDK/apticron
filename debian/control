@@ -1,18 +1,18 @@
 Source: apticron
 Section: admin
-Priority: extra
+Priority: optional
 Maintainer: Tiago Bortoletto Vaz <tiago@debian.org>
 Build-Depends: po-debconf, debhelper (>= 9.20160709~)
-Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/git/collab-maint/apticron.git
-Vcs-Git: git://git.debian.org/git/collab-maint/apticron.git
+Standards-Version: 4.1.3
+Vcs-Browser: https://salsa.debian.org/debian/apticron
+Vcs-Git: https://salsa.debian.org/debian/apticron.git
 
 Package: apticron
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.7.2)
-Depends: mailx, apt (>= 1.1~exp9), ucf (>= 0.28), cron | cron-daemon, bzip2, ${misc:Depends}
-Recommends: apt-listchanges, iproute2
-Description: Simple tool to mail about pending package updates
+Depends: bsd-mailx | mailx, apt (>= 1.1~exp9), ucf (>= 0.28), cron | cron-daemon, bzip2, ${misc:Depends}
+Recommends: apt-listchanges, iproute2, gpg
+Description: Simple tool to mail about pending package updates - cron version
  Apticron is a simple script which sends daily emails about pending package
  updates such as security updates, properly handling packages on hold both by
  dselect and aptitude.
@@ -20,10 +20,10 @@ Description: Simple tool to mail about pending package updates
 Package: apticron-systemd
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.7.2)
-Depends: mailx, apt (>= 1.1~exp9), systemd, bzip2, ${misc:Depends}
+Depends: bsd-mailx | mailx, apt (>= 1.1~exp9), systemd, bzip2, ${misc:Depends}
 Conflicts: apticron
-Recommends: apt-listchanges, iproute2
-Description: Simple tool to mail about pending package updates
+Recommends: apt-listchanges, iproute2, gpg
+Description: Simple tool to mail about pending package updates - systemd version
  Apticron is a simple script which sends daily emails about pending package
  updates such as security updates, properly handling packages on hold both by
  dselect and aptitude.

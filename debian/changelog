@@ -1,15 +1,17 @@
-apticron (1.2.0) UNRELEASED; urgency=medium
+apticron (1.2.0) unstable; urgency=medium
 
   * Remove Tassia from Uploaders.
   * Build-depends on debhelper >= 9
   * Simplify debian/rules
   * Add apticron-systemd package. Thanks to Gioele Barabucci for the patch.
     (Closes: #850853)
-  * Fix Vcs-Browser. Thanks to Gioele Barabucci for the patch. (Closes:
-    #877634)
-  * Conf file goes to /etc/apticron/ only.
+  * Fix Vcs-Browser. Now it points to salsa.debian.org. (Closes: #877634)
+  * Add an option to send encrypted emails with gpg. Thanks to Matthias
+    Baumgarten. (Closes: #877894)
+  * Dependn on bsd-mailx | mailx rather than mailx only. Thanks to Santiago
+    Vila. (Closes: #882212)
 
- -- Tiago Bortoletto Vaz <tiago@debian.org>  Mon, 09 Oct 2017 10:46:42 -0400
+ -- Tiago Bortoletto Vaz <tiago@debian.org>  Wed, 14 Feb 2018 15:33:08 -0500
 
 apticron (1.1.62) unstable; urgency=medium
 
