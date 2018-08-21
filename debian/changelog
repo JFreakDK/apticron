@@ -1,3 +1,9 @@
+apticron (1.2.1) unstable; urgency=medium
+
+  * Stateless configuration back. Thanks to Gioele Barabucci. (Closes: #879275)
+
+ -- Tiago Bortoletto Vaz <tiago@debian.org>  Tue, 21 Aug 2018 12:19:31 -0400
+
 apticron (1.2.0) unstable; urgency=medium
 
   * Remove Tassia from Uploaders.

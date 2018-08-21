@@ -1,4 +1,6 @@
-apticron          usr/sbin/
-apticron.conf     etc/apticron/
-apticron.service  lib/systemd/system
-apticron.timer    lib/systemd/system
+#!/usr/bin/dh-exec --with=install
+debian/readme_conf => etc/apticron/README
+apticron => usr/sbin/apticron
+apticron.conf => usr/lib/apticron/apticron.conf
+apticron.service => lib/systemd/system/apticron.service
+apticron.timer => lib/systemd/system/apticron.timer

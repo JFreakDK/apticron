@@ -8,7 +8,7 @@ case "$1" in
 	rm -f /etc/cron.d/apticron /etc/cron.d/apticron.ucf-*
 	rm -f /var/lib/misc/apticron.cron
 	if [ -d /etc/apticron ] ; then
-		rmdir /etc/apticron || true
+		rm -rf /etc/apticron || true
 	fi
 	rm -rf /var/lib/apticron
     ;;

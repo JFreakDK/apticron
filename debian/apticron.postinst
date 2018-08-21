@@ -18,11 +18,6 @@ dpkg-maintscript-helper rm_conffile /etc/cron.daily/apticron "1.1.44" apticron -
 case "$1" in
     configure)
 
-    	. /usr/share/debconf/confmodule
-
-	db_get apticron/notification
-	EMAIL="$RET"
-
 	# Move the old timestamp file
 	tsfile_new='/var/lib/apticron/cron_run'
 	tsfile_old='/var/lib/misc/apticron.cron'

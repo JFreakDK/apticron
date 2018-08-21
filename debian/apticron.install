@@ -1,2 +1,4 @@
-apticron          usr/sbin/
-apticron.conf     etc/apticron/
+#!/usr/bin/dh-exec --with=install
+debian/readme_conf => etc/apticron/README
+apticron => usr/sbin/apticron
+apticron.conf => usr/lib/apticron/apticron.conf

@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+case "$1" in
+    purge)
+	if [ -d /etc/apticron ] ; then
+		rm -rf /etc/apticron || true
+	fi
+	rm -rf /var/lib/apticron
+    ;;
+esac
+
+#DEBHELPER#

@@ -1,0 +1,6 @@
+Any settings in a named 'apticron.conf' file in this directory will override
+the default apticron options. You may want to copy the original
+'/usr/lib/apticron/apticron.conf' in here and use it as a base.
+
+*Do not* edit the original /usr/lib/apticron/apticron.conf, or you will lose
+your local settings during the next apticron upgrade.
