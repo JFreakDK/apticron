@@ -1,3 +1,9 @@
+apticron (1.2.2) UNRELEASED; urgency=medium
+
+  * d/changelog: Remove trailing whitespaces
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:42:15 +0200
+
 apticron (1.2.1) unstable; urgency=medium
 
   * Stateless configuration back. Thanks to Gioele Barabucci. (Closes: #879275)
@@ -437,8 +443,8 @@ apticron (1.1.21) unstable; urgency=low
   * Manage conffiles via ucf.
 
   [ Tassia Camoes Araujo ]
-  * Disconsider RTNETLINK error when Address family is not supported. Thanks to 
-    Bernard Boudet. (Closes: #463585) 
+  * Disconsider RTNETLINK error when Address family is not supported. Thanks to
+    Bernard Boudet. (Closes: #463585)
   * Fix lintian warnings.
 
  -- Tassia Camoes Araujo <tassia@debian-ba.org>  Wed, 16 Apr 2008 11:44:55 -0300
@@ -460,7 +466,7 @@ apticron (1.1.19) unstable; urgency=low
     (Closes: #349539)
   * Fix broken conditional. Thanks to Nis Martensen. (Closes: #370674)
   * Put po-debconf in Build-depends (policy 7.6)
-  * Fix no encode declaration in pt.po 
+  * Fix no encode declaration in pt.po
 
  -- Tiago Bortoletto Vaz <tiago@debian-ba.org>  Wed, 25 Oct 2006 19:44:15 -0300
 
@@ -496,7 +502,7 @@ apticron (1.1.16) unstable; urgency=low
 apticron (1.1.15) unstable; urgency=low
 
   * Fixed Tassia's name in control file.
-  * Added Colm MacCarthaigh as uploader. 
+  * Added Colm MacCarthaigh as uploader.
 
  -- Tassia Camoes Araujo <tassia@debian-ba.org>  Fri, 19 May 2006 21:54:00 -0500
 
@@ -568,14 +574,14 @@ apticron (1.1.11) unstable; urgency=low
   * Added some logic to include IP addresses of system in the output.
   * Made the system name, IP addresses and number of IP addresses to show
     configurable.
-    
+
  -- Colm MacCarthaigh <colm.maccarthaigh@heanet.ie>  Tue, 19 Apr 2005 11:03:13 +0100
 
 apticron (1.1.10) unstable; urgency=low
 
   * Added FR translation courtesy of <guilhelm.panaget@free.fr> and
     <debian-l10n-french@lists.debian.org> (Closes: #302418)
-  * Corrected the signature seperator, courtesy of <ben@benfinney.id.au> 
+  * Corrected the signature seperator, courtesy of <ben@benfinney.id.au>
     (Closes: #304725)
   * Corrected a typo in the long descrip;tion, courtesy of
     <ben@benfinney.id.au> (Closes: #304724)
@@ -593,13 +599,13 @@ apticron (1.1.8) unstable; urgency=low
 
   * Removed the autoclean command, (Closes: #301027)
   * Retain apt-listchanges stderr output. (Closes: #300920)
-  * Changed default invokation of apt-listchanges to include both news and 
-    changes, aswell as output headers. Also added LISTCHANGES_PROFILE 
+  * Changed default invokation of apt-listchanges to include both news and
+    changes, aswell as output headers. Also added LISTCHANGES_PROFILE
     configuration directive. (Closes: #300919)
   * Made some cosmetic changes to mail format. All levels of indentation
     should now be consistent.
   * Migrated to using /etc/bash instead of /etc/sh, due to presence of bash-isms.
-  
+
  -- Colm MacCarthaigh <colm.maccarthaigh@heanet.ie>  Wed, 23 Mar 2005 14:45:46 +0000
 
 apticron (1.1.7) unstable; urgency=low
@@ -618,7 +624,7 @@ apticron (1.1.6) unstable; urgency=low
 
 apticron (1.1.5) unstable; urgency=low
 
-  * Updated to use po-debconf 
+  * Updated to use po-debconf
 
  -- Colm MacCarthaigh <colm.maccarthaigh@heanet.ie>  Thu,  6 Jan 2005 16:17:28 +0000
 
@@ -637,7 +643,7 @@ apticron (1.1.3) unstable; urgency=low
 
 apticron (1.1.2) unstable; urgency=low
 
-  * Added date to start of report and other cosmetic fixes. 
+  * Added date to start of report and other cosmetic fixes.
 
  -- Cillian Sharkey <csharkey@heanet.ie>  Wed,  6 Aug 2003 11:14:13 +0100
 
