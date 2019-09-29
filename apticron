@@ -90,11 +90,11 @@ if [ -z "$IPADDRESSES" ] && [ -x /sbin/ip ]; then
              /usr/bin/cut -d/ -f1) || true`
 
 	# Set the IPv6 addresses
-	IPADDRESSES="$IPADDRESSES `/sbin/ip -f inet6 addr show scope global 2> /dev/null | \
+	IPADDRESSES="$IPADDRESSES `/sbin/ip -f inet6 addr show scope global -deprecated -dadfailed -temporary -tentative 2> /dev/null | \
 	                           /bin/grep "scope global" | \
-				   /usr/bin/head -$IPADDRESSNUM |\
-				   /usr/bin/awk '{ print $2 }' |\
-				   /usr/bin/cut -d/ -f1`"
+		            		   /usr/bin/head -$IPADDRESSNUM |\
+				               /usr/bin/awk '{ print $2 }' |\
+	            			   /usr/bin/cut -d/ -f1`"
 fi
 
 # Turn our list of addresses into nicely formatted output

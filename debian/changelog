@@ -1,13 +1,22 @@
-apticron (1.2.3) UNRELEASED; urgency=medium
+apticron (1.2.3) unstable; urgency=medium
+
+  * Add ‘debian/dirs’ and ‘debian/manpages’ to -sytemd binary. Thanks to
+    Guilhem Moulin. (Closes: 934863)
+
+ -- Tiago Bortoletto Vaz <tiago@debian.org>  Sat, 28 Sep 2019 21:12:17 -0400
+
+apticron (1.2.2) unstable; urgency=medium
 
   [ Ondřej Nový ]
   * d/changelog: Remove trailing whitespaces
 
   [ Tiago Bortoletto Vaz ]
-  * Fix var name i apticron.conf. Thanks to Alex Hofbauer.
+  * Fix var name in apticron.conf. Thanks to Alex Hofbauer.
     (Closes: #920352)
+  * No reason to include temporary, deprecated, tentative, or failed IPv6
+    addresses in output. Thanks to martin f krafft. (Closes: #935295)
 
- -- Tiago Bortoletto Vaz <tiago@debian.org>  Sat, 27 Apr 2019 15:03:11 -0400
+ -- Tiago Bortoletto Vaz <tiago@debian.org>  Sat, 28 Sep 2019 20:43:13 -0400
 
 apticron (1.2.1) unstable; urgency=medium
 
