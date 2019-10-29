@@ -1,3 +1,10 @@
+apticron (1.2.3+nmu1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * No-change source-only upload to allow testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 29 Oct 2019 14:00:18 -0400
+
 apticron (1.2.3) unstable; urgency=medium
 
   * Add ‘debian/dirs’ and ‘debian/manpages’ to -sytemd binary. Thanks to
