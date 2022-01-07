@@ -39,7 +39,7 @@ Mailx() {
 		fi
 	fi
     if [ -n "$USERNAME" ] && [ -n "$RECIPIENT" ] ; then
-        cat "$MAIL_BODY_FILE" | /opt/signal-cli-0.6.7/bin/signal-cli -u "$USERNAME" send "$RECIPIENT" >> /var/log/signal-cli.log
+        cat "$MAIL_BODY_FILE" | /opt/signal-cli/bin/signal-cli -u "$USERNAME" send "$RECIPIENT" >> /var/log/signal-cli.log
     fi
     rm "$MAIL_BODY_FILE"
 }
